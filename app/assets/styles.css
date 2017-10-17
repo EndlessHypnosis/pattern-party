@@ -1,4 +1,6 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -53,8 +55,8 @@
 body {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
-
 
 header {
   background-color: #2F2235;
@@ -78,8 +80,21 @@ header .author {
   padding: 10px 75px;
 }
 
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 75px;
+  background-color: #2F2235;
+  color: #ffffff;
+}
+
 section {
   padding: 50px 75px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .h-rule {
@@ -98,6 +113,25 @@ section {
   text-transform: uppercase;
   flex-shrink: 0;
 }
+
+.section-viewcode {
+  display: flex;
+  justify-content: center;
+}
+
+.section-viewcode button {
+  background-color: #3F3244;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 110px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+
+
+
 
 
 
