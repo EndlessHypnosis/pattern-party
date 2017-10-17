@@ -101,7 +101,9 @@ section {
   border: 0;
   height: 1px;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #b2b2b2, rgba(0, 0, 0, 0));
+  margin-left: 30px;
+  background-color: #D1D2D3;
+  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #D1D2D3, rgba(0, 0, 0, 0)); */
 }
 
 .section-title {
@@ -128,35 +130,56 @@ section {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.ubuntu-dark-small {
-  font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: darkslategray;
+.tab-div {
+  display: none;
+  order: 5;
+  border: 1px solid #D1D2D3;
+  padding: 15px;
 }
 
-.ubuntu-gray-medium {
-  font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+#tab1 {
+  display: block;
+  /* order: 5; */
+  /* flex: 1; */
 }
 
-.ubuntu-light-medium {
-  font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: darkgray;
+.tab-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-label {
+  flex-shrink: 0;
+  border: 1px solid #FFFFFF;
+  padding: 5px 15px;
+  width: 25%;
+  background-color: #D1D2D3;
+}
+
+.section-main {
+  padding: 50px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  .tab-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-div {
+    order: 0;
+  }
+
+  .tab-label {
+    width: 100%;
+  }
+
+
 }
