@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sans-dark {
+  font-weight: 600;
+}
+
+.sans-light {
+  font-weight: 300;
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.c-blue {
+  color: #34D1D1;
+}
+
+.c-purple {
+  color: #2F2235;
+}
+
+.c-brown {
+  color: #3F3244;
+}
+
+.c-offwhite {
+  color: #F2F2F2;
+}
+
+.c-lightgrey {
+  color: #D1D2D3;
+}
+
+.c-grey {
+  color: #666666;
+}
+
+.c-black {
+  color: #000000;
+}
+
+.to-upper {
+  text-transform: uppercase;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  background-color: #2F2235;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .title {
+  font-size: 30px;
+  padding: 10px 75px;
+}
+
+header .title span {
+  color: #34D1D1;
+}
+
+header .author {
+  font-size: 22px;
+  padding: 10px 75px;
+}
+
+section {
+  padding: 50px 75px;
+}
+
+.h-rule {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #b2b2b2, rgba(0, 0, 0, 0));
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
+.section-title span {
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+.ubuntu-dark-small {
+  font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: darkslategray;
+}
+
+.ubuntu-gray-medium {
+  font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ubuntu-light-medium {
+  font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: darkgray;
+}
