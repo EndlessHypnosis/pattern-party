@@ -94,7 +94,6 @@ section {
   padding: 50px 75px;
   display: flex;
   flex-direction: column;
-
 }
 
 .h-rule {
@@ -109,6 +108,12 @@ section {
 
 .rule-sub {
   margin: 15px 0 25px 0;
+}
+
+.tab-image {
+  width: 300px;
+  min-width: 300px;
+  height: 350px;
 }
 
 .section-title {
@@ -150,7 +155,6 @@ section {
   margin-left: 30px;
   padding: 20px 0;
 }
-
 
 .tab-details {
   line-height: 24px;
@@ -210,12 +214,54 @@ section {
   padding: 50px;
 }
 
+.mobile-rule {
+  display: none;
+}
 
 
 
 
+@media screen and (max-width: 650px) {
 
-@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .title {
+    font-size: 24px;
+  }
+
+  header .author {
+    font-size: 14px;
+  }
+
+  .tab-image {
+    width: 100%;
+    min-width: 0px;
+    /* height: 175px; */
+  }
+
+  .section-title {
+    flex-direction: column;
+  }
+
+  .section-title span {
+    margin-right: 0;
+  }
+
+  .section-title hr {
+    width: 30%;
+    margin-top: 10px;
+  }
+
+  .mobile-rule {
+    display: block;
+    width: 20%;
+    background-color: #504a52;
+  }
 
   .tab-links {
     display: flex;
@@ -224,6 +270,8 @@ section {
 
   .tab-div {
     order: 0;
+    flex-direction: column;
+    padding: 0;
   }
 
   .tab-label {
