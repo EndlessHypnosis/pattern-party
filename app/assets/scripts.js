@@ -1,8 +1,5 @@
-
-
 const tabClick = (e) => {
   let $targetTab = $(e);
-  
   let $targetDiv = $(`#${$targetTab.data('tab')}`);
 
   $('.tab-div').css('display', 'none');
@@ -13,9 +10,7 @@ const tabClick = (e) => {
 
   $('.tab-label span:nth-of-type(2)').text('+');
   $targetTab.find('span:nth-of-type(2)').text('-');
-
 }
-
 
 $(document).ready(function () {
   $('.tab-label').on('click', (e) => {
@@ -24,8 +19,4 @@ $(document).ready(function () {
 
   //set to tab 1 by default:
   tabClick($('.tab-label')[0]);
-  // console.log('DFD', $('.tab-label')[0]);
-  
 });
-
-// const targetIcon = $(`#${targetDiv.data('icon')}`);
