@@ -112,8 +112,9 @@ section {
 
 .tab-image {
   width: 300px;
-  min-width: 300px;
+  /* min-width: 300px; */
   height: 350px;
+  border: 1px solid #D1D2D3;
 }
 
 .section-title {
@@ -195,6 +196,10 @@ section {
   font-size: 17px;
 }
 
+  .tab-label span:nth-child(2) {
+    display: none;
+  }
+
 .white-border {
   border-right: 1px solid #ffffff;
 }
@@ -220,6 +225,19 @@ section {
 }
 
 
+@media screen and (max-width: 900px) {
+
+  .tab-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-content {
+    margin-left: 0;
+  }
+
+}
+
 
 
 @media screen and (max-width: 650px) {
@@ -244,9 +262,9 @@ section {
   }
 
   .tab-image {
+    display: block;
     width: 100%;
-    min-width: 0px;
-    /* height: 175px; */
+    height: auto;
   }
 
   .section-title {
@@ -271,19 +289,48 @@ section {
   .tab-links {
     display: flex;
     flex-direction: column;
+    border: 1px solid #D1D2D3;
   }
 
   .tab-div {
     order: 0;
     flex-direction: column;
     padding: 0;
+    border: 0;
   }
 
   .tab-label {
     width: 100%;
     text-align: left;
     padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    line-height: 17px;
   }
+
+  .tab-label span:nth-child(2) {
+    display: block;
+    font-size: 26px;
+  }
+
+  .tab-content-title {
+    font-size: 16px;
+  }
+
+  .tab-details {
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  .active-tab {
+    top: 0;
+  }
+
+  /* .white-border {
+    border: none;
+  } */
 
 
 }

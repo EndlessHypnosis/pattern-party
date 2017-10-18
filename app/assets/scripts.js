@@ -11,12 +11,15 @@ const tabClick = (e) => {
   $('.tab-label').removeClass('active-tab');
   $targetTab.addClass('active-tab');
 
+  $('.tab-label span:nth-of-type(2)').text('+');
+  $targetTab.find('span:nth-of-type(2)').text('-');
+
 }
 
 
 $(document).ready(function () {
   $('.tab-label').on('click', (e) => {
-    tabClick(e.target);
+    tabClick(e.currentTarget);
   });
 
   //set to tab 1 by default:
