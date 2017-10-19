@@ -12,6 +12,7 @@ const tabClick = (e) => {
   $targetTab.find('span:nth-of-type(2)').text('-');
 }
 
+// do this stuff once
 $(document).ready(function () {
   $('.tab-label').on('click', (e) => {
     tabClick(e.currentTarget);
