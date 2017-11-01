@@ -1,4 +1,4 @@
-# Pattern Party by Nick Svetnicka for Turing
+# Pattrn Party by Nick Svetnicka for Turing
 
 ![ScreenShot of App](assets/_ss.png?raw=true "ScreenShot of App")
 
