@@ -279,6 +279,81 @@ section {
 }
 
 
+
+
+
+/* ----------------------------
+        header bar
+------------------------------- */
+
+
+.header-bar-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D1D2D3;
+  padding: 20px;
+}
+
+.header-bar-wrapper span {
+  font-weight: 300;
+  color: #666666;
+  text-align: center;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.img-thex {
+  width: 80px;
+  height: 80px;
+}
+
+.img-search {
+  width: 30px;
+  height: 32px;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 8px;
+  background-color: #f2f2f2;
+  border: 1px solid #999999;
+  color: #999999;
+}
+
+.search-wrapper input {
+  margin-left: 3px;
+  padding: 5px;
+  color: #999999;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 18px;
+  width: 135px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------
         MEDIA QUERIES
 ------------------------------- */
