@@ -12,11 +12,25 @@ const tabClick = (e) => {
   $targetTab.find('span:nth-of-type(2)').text('-');
 }
 
+const menuClick = (e) => {
+  // let $menu = $(e);
+
+  if ($(window).width() <= 800) {
+    $('.nav-links').toggleClass('on-off');
+    $('.search-wrapper').toggleClass('on-off');
+  }
+
+}
+
 // do this stuff once
 $(document).ready(function () {
   $('.tab-label').on('click', (e) => {
     tabClick(e.currentTarget);
   });
+
+  $('.thex-wrapper').on('click', (e) => {
+    menuClick(e.currentTarget);
+  })
 
   //set to tab 1 by default:
   tabClick($('.tab-label')[0]);
